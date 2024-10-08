@@ -1,9 +1,9 @@
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif
 }
 
 img {
@@ -16,22 +16,25 @@ img {
     width: 60%;
     max-width: 1000px;
     margin: 0 auto;
-    /* debug */
-    min-height: 400px;
-    border: 2px solid black;
 }
 
 .row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 35px;
 
 }
+
 /* utility */
 
 .mt-20 {
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.absolute {
+    position: absolute;
 }
 
 /* HEADER */
@@ -40,10 +43,85 @@ img {
 /* MAIN */
 .col {
     width: calc(95%/3);
-    /* debug */
-    height: 300px;
-    border: 2px solid black;
+    /* debug??? */
+    min-height: 400px;
+
 }
+
+.basic-price {
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.price {
+    color: #ff0000;
+}
+
+.parent {
+    position: relative
+}
+
+.img-visible {
+    z-index: 1;
+}
+
+.img-hidden {
+    top: 0;
+    left: 0;
+}
+
+.parent:hover .img-hidden {
+    z-index: 1;
+}
+
+.description {
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+
+
+}
+
+/* HEART */
+.square-heart {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.heart:hover {
+    background-color: #ff0000;
+}
+
+/* /HEART */
+
+/* BLOCKS */
+.blocks {
+    bottom: 80px;
+    padding: 5px;
+    font-size: 10px;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.promo {
+    background: #ff0000;
+    left: 0
+}
+
+.natural {
+    left: 35px;
+    background-color: green
+}
+
+/* /BLOCKS */
+
+
 
 /* /MAIN */
 
