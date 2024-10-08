@@ -1,0 +1,51 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* COMMON */
+/* layout */
+.container {
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* debug */
+    min-height: 400px;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+}
+/* utility */
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* HEADER */
+/* /HEADER */
+
+/* MAIN */
+.col {
+    width: calc(95%/3);
+    /* debug */
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* /MAIN */
+
+/* FOOTER */
+/* /FOOTER */
